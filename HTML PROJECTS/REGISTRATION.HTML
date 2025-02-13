@@ -1,0 +1,80 @@
+<head>
+<title>Online License Registration</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #CC9966;
+color: #333;
+}
+header {
+background-color: #FFFDD0;
+color: #D0D2FF;
+padding: 20px;
+text-align: center;
+}
+header h1 {
+margin: 0;
+font-size: 2.5em;
+}
+main {
+padding: 20px;
+max-width: 600px;
+margin: 0 auto;
+background-color: #6699CC;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+form {
+display: flex;
+flex-direction: column;
+}
+label {
+margin-bottom: 10px;
+font-weight: bold;
+}
+input, select {
+padding: 10px;
+margin-bottom: 15px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+button {
+padding: 10px;
+background-color: #000;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover {
+background-color: #ffcc00;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Online License Registration</h1>
+</header>
+<main>
+<form action="submit_form.php" method="POST">
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="firstName" required>
+<label for="middleName">Middle Name:</label>
+<input type="text" id="middleName" name="middleName">
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" name="lastName" required>
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required>
+<label for="gender">Gender:</label>
+<select id="gender" name="gender" required>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select>
+<button type="submit">Register</button>
+</form>
+</main>
+</body>
+</html>
